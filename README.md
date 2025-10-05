@@ -8,7 +8,7 @@ output: github_document
 <!-- badges: start -->
 [![pkgdown](https://img.shields.io/badge/docs-pkgdown-blue.svg)](https://yourusername.github.io/BiasVarianceMedAI/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![R build status](https://github.com/yourusername/BiasVarianceMedAI/workflows/R-CMD-check/badge.svg)](https://github.com/yourusername/BiasVarianceMedAI/actions)
+[![R build status](https://github.com/StatsLabNYUAD/BiasVarianceMedAI/workflows/R-CMD-check/badge.svg)](https://github.com/StatsLabNYUAD/BiasVarianceMedAI/actions)
 <!-- badges: end -->
 
 ## Overview
@@ -56,4 +56,4 @@ You can install the development version from GitHub with:
 install.packages("remotes")
 
 # Install BiasVarianceMedAI
-remotes::install_github("yourusername/BiasVarianceMedAI")
+remotes::install_github("StatsLabNYUAD/BiasVarianceMedAI")
