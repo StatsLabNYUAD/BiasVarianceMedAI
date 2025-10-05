@@ -57,3 +57,27 @@ install.packages("remotes")
 
 # Install BiasVarianceMedAI
 remotes::install_github("StatsLabNYUAD/BiasVarianceMedAI")
+```
+
+## Quick Start - Launch the Interactive App
+
+After installation, launch the interactive Shiny application:
+
+```r
+# Load the package
+library(BiasVarianceMedAI)
+
+# Launch the interactive Shiny app
+run_bias_variance_app()
+
+# Or run the app from the inst/shiny-app directory
+shiny::runApp(system.file("shiny-app", package = "BiasVarianceMedAI"))
+```
+
+The app will open in your default web browser, providing an intuitive interface for:
+- Uploading your own datasets (CSV/Excel)
+- Using built-in lung cancer screening examples
+- Performing bias-variance analysis with different model complexities
+- Generating professional visualizations and reports
+NA
+remotes::install_github("StatsLabNYUAD/BiasVarianceMedAI")
