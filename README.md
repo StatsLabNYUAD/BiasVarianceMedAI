@@ -55,8 +55,18 @@ You can install the development version from GitHub with:
 # Install remotes if not already available
 install.packages("remotes")
 
-# Install BiasVarianceMedAI
-remotes::install_github("StatsLabNYUAD/BiasVarianceMedAI")
+# Install BiasVarianceMedAI (with dependencies)
+remotes::install_github(
+  "StatsLabNYUAD/BiasVarianceMedAI",
+  dependencies = TRUE
+)
+```
+Windows tip: If you see “Access is denied” or 00LOCK messages during install, install to a clean user library for this session:
+```r
+lib <- "C:/RlibsBV"
+dir.create(lib, showWarnings = FALSE, recursive = TRUE)
+.libPaths(c(lib, .libPaths()))
+remotes::install_github("StatsLabNYUAD/BiasVarianceMedAI", dependencies = TRUE)
 ```
 
 ## Quick Start - Launch the Interactive App
@@ -66,9 +76,6 @@ After installation, launch the interactive Shiny application:
 ```r
 # Load the package
 library(BiasVarianceMedAI)
-
-# Launch the interactive Shiny app
-run_bias_variance_app()
 
 # Or run the app from the inst/shiny-app directory
 shiny::runApp(system.file("shiny-app", package = "BiasVarianceMedAI"))
